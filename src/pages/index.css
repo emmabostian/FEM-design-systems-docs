@@ -1,0 +1,66 @@
+.navbar {
+  background-color: #4152a4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 44px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-family: LemonTuesday;
+  font-size: 36px;
+}
+
+.lesson-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson-links a {
+  background: linear-gradient(
+    90deg,
+    rgba(41, 41, 214, 1) 0%,
+    rgba(18, 18, 190, 1) 100%
+  );
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 16px;
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index .main-card {
+  max-width: 600px;
+  margin-top: 48px;
+}
+
+.main-card ol {
+  list-style-type: none;
+  padding: 0 15px;
+}
+
+.main-card a {
+  color: #4152a4;
+  font-size: 1.5rem;
+  margin: 4px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-card a:hover,
+.main-card a:focus {
+  text-decoration: underline;
+}
+
+.main-card .lesson-content {
+  align-items: flex-start;
+}

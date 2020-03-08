@@ -1,0 +1,50 @@
+@font-face {
+  font-family: LemonTuesday;
+  src: url("../assets/lemon-tuesday.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Muli;
+  src: url("../assets/Muli.ttf") format("opentype");
+}
+
+body,
+html {
+  padding: 0 0 24px;
+  margin: 0;
+  font-family: "Muli";
+}
+
+main {
+  padding: 15px 30px;
+}
+
+main p {
+  max-width: 600px;
+}
+
+h2:first-child {
+  font-family: "LemonTuesday";
+  color: #4152a4;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.lesson-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+pre {
+  background: rgb(41, 41, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(41, 41, 214, 1) 0%,
+    rgba(18, 18, 190, 1) 100%
+  );
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+} */
