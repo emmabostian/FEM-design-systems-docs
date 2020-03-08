@@ -32,6 +32,17 @@
   margin: 0 16px;
 }
 
+.index-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-wrapper img {
+  height: 800px;
+  position: relative;
+  top: -15px;
+}
+
 .index {
   display: flex;
   justify-content: center;

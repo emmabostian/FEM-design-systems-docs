@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Card from "../components/TOCCard";
-
+import logo from "../assets/logo.jpg";
 import "./index.css";
 
 const IndexPage = () => (
@@ -31,11 +31,14 @@ const IndexPage = () => (
       }
     `}
     render={props => (
-      <div className="index">
-        <Card
-          title="Table of Contents"
-          content={props.allMarkdownRemark.edges}
-        />
+      <div className="index-wrapper">
+        <div className="index">
+          <Card
+            title="Table of Contents"
+            content={props.allMarkdownRemark.edges}
+          />
+        </div>
+        <img src={logo} alt="Logo" />
       </div>
     )}
   />
