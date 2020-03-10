@@ -1,29 +1,38 @@
+ul > li {
+  margin: 8px 0;
+}
+
+a {
+  color: #4152a4;
+}
+
 .header {
   background-color: #4152a4;
   color: white;
   display: flex;
   padding: 24px 44px;
+  justify-content: space-between;
 }
 
 .header a {
   text-decoration: none;
   color: inherit;
   font-family: LemonTuesday;
-  font-size: 20px;
+  font-size: 1.7rem;
 }
 
 .lesson-links {
+  position: fixed;
+  right: 80px;
+  bottom: 60px;
+  width: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .lesson-links a {
-  background: linear-gradient(
-    90deg,
-    rgba(41, 41, 214, 1) 0%,
-    rgba(18, 18, 190, 1) 100%
-  );
-  color: white;
+  background: #f2f1f2;
+  color: #4152a4;
   padding: 16px;
   border-radius: 4px;
   text-decoration: none;
@@ -76,28 +85,38 @@
   align-items: flex-start;
 }
 
-@media (min-width: 800px) {
-  .header a {
-    font-size: 36px;
+.language-text {
+  background: #4152a4 !important;
+  padding: 2px 8px !important;
+}
+
+pre {
+  max-width: 800px !important;
+  overflow-x: auto !important;
+}
+
+.token.class-name {
+  color: #b6def8 !important;
+}
+
+.token.tag {
+  color: #f36648 !important;
+}
+
+.token.attr-name {
+  color: #ffae00 !important;
+}
+
+.token.string {
+  color: #ff919f !important;
+}
+
+.token.function {
+  color: #aab8ff !important;
+}
+
+@media (max-width: 1500px) {
+  .lesson-links {
+    display: none;
   }
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-  margin: 4px 0;
-}
-
-nav li > a {
-  color: #505050;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-nav li > a:hover,
-nav li > a:focus {
-  text-decoration: underline;
 }

@@ -14,8 +14,7 @@ export default function Template(props) {
           allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.path
         }
       >
-        {"← " +
-          allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.title}
+        Previous section
       </Link>
     ) : null;
   const nextLink =
@@ -26,8 +25,7 @@ export default function Template(props) {
           allMarkdownRemark.edges[frontmatter.order + 1].node.frontmatter.path
         }
       >
-        {allMarkdownRemark.edges[frontmatter.order + 1].node.frontmatter.title +
-          " →"}
+        Next section
       </Link>
     ) : null;
   return (

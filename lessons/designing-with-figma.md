@@ -49,11 +49,7 @@ Tertiary buttons are used for miscellaneous actions; actions which are not somet
 
 ## Button Styles
 
-There are many styles you can use to convey your button hierarchy.
-
-Your buttons should look and function like a button.
-
-Here are some common button patterns which are familiar to most users.
+There are many styles you can use to convey your button hierarchy. Your buttons should look and function like a button. Here are some common button patterns which are familiar to most users.
 
 ![Buttons](images/primary-buttons.png)
 

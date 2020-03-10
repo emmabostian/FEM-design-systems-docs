@@ -13,10 +13,14 @@ html {
   padding: 0 0 24px;
   margin: 0;
   font-family: "Muli";
+  overflow-x: hidden;
 }
 
 main {
-  padding: 15px 0 15px 30px;
+  padding: 30px 0;
+  font-size: 18px;
+  position: relative;
+  left: 100px;
 }
 
 main p {
@@ -33,18 +37,9 @@ h2:first-child {
 .lesson-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-/* 
-pre {
-  background: rgb(41, 41, 214);
-  background: linear-gradient(
-    90deg,
-    rgba(41, 41, 214, 1) 0%,
-    rgba(18, 18, 190, 1) 100%
-  );
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-} */
+
+.footer-image {
+  position: absolute;
+  width: 40%;
+}
