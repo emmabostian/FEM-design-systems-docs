@@ -1,16 +1,15 @@
-.navbar {
+.header {
   background-color: #4152a4;
   color: white;
   display: flex;
-  justify-content: space-between;
   padding: 24px 44px;
 }
 
-.navbar a {
+.header a {
   text-decoration: none;
   color: inherit;
   font-family: LemonTuesday;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .lesson-links {
@@ -47,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .index .main-card {
@@ -74,4 +74,30 @@
 
 .main-card .lesson-content {
   align-items: flex-start;
+}
+
+@media (min-width: 800px) {
+  .header a {
+    font-size: 36px;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 4px 0;
+}
+
+nav li > a {
+  color: #505050;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav li > a:hover,
+nav li > a:focus {
+  text-decoration: underline;
 }

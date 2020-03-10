@@ -23,12 +23,11 @@ const TemplateWrapper = props => (
             }
           ]}
         />
-        <nav className="navbar">
+        <header className="header">
           <Link to="/" className="navbar-brand">
             {data.site.siteMetadata.title}
           </Link>
-          <p>Frontend Masters</p>
-        </nav>
+        </header>
         <main className="main">{props.children}</main>
       </div>
     )}

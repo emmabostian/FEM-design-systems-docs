@@ -1,7 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Card from "../components/TOCCard";
-import logo from "../assets/logo.jpg";
+import { StaticQuery, graphql, Link } from "gatsby";
 import "./index.css";
 
 const IndexPage = () => (
@@ -33,12 +31,19 @@ const IndexPage = () => (
     render={props => (
       <div className="index-wrapper">
         <div className="index">
-          <Card
-            title="Table of Contents"
-            content={props.allMarkdownRemark.edges}
-          />
+          <h2>What we'll cover</h2>
+          <nav className="nav">
+            <ul>
+              {props.allMarkdownRemark.edges.map(lesson => (
+                <li key={lesson.node.frontmatter.path}>
+                  <Link to={lesson.node.frontmatter.path}>
+                    {lesson.node.frontmatter.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-        <img src={logo} alt="Logo" />
       </div>
     )}
   />
