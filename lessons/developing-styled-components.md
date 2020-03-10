@@ -568,7 +568,7 @@ import { createGlobalStyle } from "styled-components";
 import { primaryFont } from "./typography";
 import { normalize } from "polished";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 ${normalize()}
 html {
   box-sizing: border-box;
@@ -590,14 +590,19 @@ main {
   margin: 0 auto;
 }
 `;
-export default GlobalStyle;
+```
+
+Add `Global.js` to the default export in `index.js`.
+
+```js
+export * from "./Global";
 ```
 
 Back inside `index.js` let's import our global styles and render it as a self-closing tag at the end of our JSX.
 
 ```jsx
 ...
-import GlobalStyle from "./utils/Global";
+import { GlobalStyle } from "./utils";
 
 const App = () => (
   <div>
@@ -674,7 +679,7 @@ const Button = styled.button`
   }
 
   &:focus {
-    outline: 3px solid ${props => props.theme.primaryHoverColor};
+    outline: 3px solid ${defaultTheme.primaryHoverColor};
     outline-offset: 2px;
   }
 
@@ -716,6 +721,7 @@ export const TertiaryButton = styled(Button)`
   &:disabled {
     color: ${defaultTheme.disabled};
     cursor: not-allowed;
+    background: none;
   }
 `;
 
@@ -756,7 +762,7 @@ Next, let's define a variable which will hold all of our modifiers. Let's start 
 const BUTTON_MODIFIERS = {
   small: () => `
     font-size: ${typeScale.helperText};
-    padding: 8px 8px;
+    padding: 8px;
   `,
   large: () => `
     font-size: ${typeScale.header5};
@@ -784,6 +790,7 @@ const PrimaryButton = styled(Button)`
 export const SecondaryButton = styled(Button)`
   border: 2px solid ${defaultTheme.primaryColor};
   color: ${defaultTheme.primaryColor};
+  background: none;
 
   &:disabled {
     background: none;
@@ -797,6 +804,7 @@ export const SecondaryButton = styled(Button)`
 export const TertiaryButton = styled(Button)`
   border: 2px solid transparent;
   color: ${defaultTheme.primaryColor};
+  background: none;
 
   &:disabled {
     color: ${defaultTheme.disabled};
@@ -828,15 +836,17 @@ import { blue, neutral, yellow, green, red } from "./colors";
 
 ...
 
-warningColor: yellow[100],
-warningColorHover: yellow[200],
-warningColorActive: yellow[300],
-errorColor: red[100],
-errorColorHover: red[200],
-errorColorActive: red[300],
-successColor: green[100],
-successColorHover: green[200],
-successColorActive: green[300]
+status: {
+  warningColor: yellow[100],
+  warningColorHover: yellow[200],
+  warningColorActive: yellow[300],
+  errorColor: red[100],
+  errorColorHover: red[200],
+  errorColorActive: red[300],
+  successColor: green[100],
+  successColorHover: green[200],
+  successColorActive: green[300]
+}
 ```
 
 Next let's add the modifiers for the warning, success, and error states.
@@ -849,48 +859,48 @@ import { defaultTheme, helperText, header5, paragraph } from "../utils";
 const BUTTON_MODIFIERS = {
   small: () => `
     font-size: ${typeScale.helperText};
-    padding: 8px 8px;
+    padding: 8px;
   `,
   large: () => `
     font-size: ${typeScale.header5};
     padding: 16px 24px;
   `,
   warning: () => `
-    background-color: ${defaultTheme.warningColor};
+    background-color: ${defaultTheme.status.warningColor};
     color: ${defaultTheme.textColorInverted};
-
+    
     &:hover, &:focus {
-      background-color: ${defaultTheme.warningColorHover};
-      outline: 3px solid ${props => props.theme.warningColorHover};
+      background-color: ${defaultTheme.status.warningColorHover};
+      outline: 3px solid ${defaultTheme.status.warningColorHover};
       outline-offset: 2px;
     }
 
     &:active {
-      background-color: ${defaultTheme.warningColorActive};
+      background-color: ${defaultTheme.status.warningColorActive};
     }
   `,
   error: () => `
-  background-color: ${defaultTheme.errorColor};
+  background-color: ${defaultTheme.status.errorColor};
   color: ${defaultTheme.textColorInverted};
 
   &:hover {
-    background-color: ${defaultTheme.errorColorHover};
+    background-color: ${defaultTheme.status.errorColorHover};
   }
 
   &:active {
-    background-color: ${defaultTheme.errorColorActive};
+    background-color: ${defaultTheme.status.errorColorActive};
   }
   `,
   success: () => `
-  background-color: ${defaultTheme.successColor};
+  background-color: ${defaultTheme.status.successColor};
   color: ${defaultTheme.textColorInverted};
 
   &:hover {
-    background-color: ${defaultTheme.successColorHover};
+    background-color: ${defaultTheme.status.successColorHover};
   }
 
   &:active {
-    background-color: ${defaultTheme.successColorActive};
+    background-color: ${defaultTheme.status.successColorActive};
   }
   `
 };
@@ -922,15 +932,17 @@ export const darkTheme = {
   primaryFont: primaryFont,
   disabled: neutral[400],
   textOnDisabled: neutral[300],
-  warningColor: yellow[100],
-  warningColorHover: yellow[200],
-  warningColorActive: yellow[300],
-  errorColor: red[100],
-  errorColorHover: red[200],
-  errorColorActive: red[300],
-  successColor: green[100],
-  successColorHover: green[200],
-  successColorActive: green[300]
+  status: {
+    warningColor: yellow[100],
+    warningColorHover: yellow[200],
+    warningColorActive: yellow[300],
+    errorColor: red[100],
+    errorColorHover: red[200],
+    errorColorActive: red[300],
+    successColor: green[100],
+    successColorHover: green[200],
+    successColorActive: green[300]
+  }
 };
 ```
 
@@ -940,6 +952,7 @@ Inside of `index.js` let's import `useState` and create a boolean variable `useD
 
 ```jsx
 import React, { useState } from "react";
+import { GlobalStyle, darkTheme, defaultTheme } from "./utils";
 ...
 
 const App = () => {
@@ -980,15 +993,18 @@ You can also use one if you prefer simply toggling the state instead of being ex
 ```jsx
 return (
 	  <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}>
-			<PrimaryButton
-        style={{ margin: "0 16px" }}
+			<button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
         onClick={() => setUseDarkTheme(true)}
       >
         Dark theme
-      </PrimaryButton>
-      <PrimaryButton style={{ margin: "0 16px" }} onClick={() => setUseDarkTheme(false)}>
+      </button>
+      <button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
+        onClick={() => setUseDarkTheme(false)}
+      >
         Default theme
-      </PrimaryButton>
+      </button>
       ...
 	  </ThemeProvider>
 ```
@@ -1008,18 +1024,18 @@ const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}>
-      <PrimaryButton
-        style={{ margin: "0 16px" }}
+      <button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
         onClick={() => setUseDarkTheme(true)}
       >
         Dark theme
-      </PrimaryButton>
-      <PrimaryButton
-        style={{ margin: "0 16px" }}
+      </button>
+      <button
+        style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
         onClick={() => setUseDarkTheme(false)}
       >
         Default theme
-      </PrimaryButton>
+      </button>
       <div
         style={{
           background: useDarkTheme
@@ -1032,9 +1048,7 @@ const App = () => {
           justifyContent: "space-around"
         }}
       >
-        <PrimaryButton modifiers={["small", "success"]}>
-          Hello World
-        </PrimaryButton>
+        <PrimaryButton modifiers={["small"]}>Hello World</PrimaryButton>
         <SecondaryButton modifiers={["large"]}>Goodbye World</SecondaryButton>
         <TertiaryButton>Hey</TertiaryButton>
         <GlobalStyle />
@@ -1054,54 +1068,54 @@ Our components will take a theme prop from the `ThemeProvider` and render the pr
 
 ```jsx
 import styled from "styled-components";
+import { typeScale } from "../utils";
 import { applyStyleModifiers } from "styled-components-modifiers";
-import { primaryFont, typeScale } from "../utils";
 
 const BUTTON_MODIFIERS = {
   small: () => `
     font-size: ${typeScale.helperText};
-    padding: 8px 8px;
+    padding: 8px;
   `,
   large: () => `
     font-size: ${typeScale.header5};
     padding: 16px 24px;
   `,
-  warning: ({ theme }) => `
-    background-color: ${theme.warningColor};
+  warning: () => `
+    background-color: ${props => props.theme.status.warningColor};
     color: ${props => props.theme.textColorInverted};
-
+    
     &:hover, &:focus {
-      background-color: ${theme.warningColorHover};
-      outline: 3px solid ${props => props.theme.warningColorHover};
+      background-color: ${props => props.theme.status.warningColorHover};
+      outline: 3px solid ${props => props.theme.status.warningColorHover};
       outline-offset: 2px;
     }
 
     &:active {
-      background-color: ${theme.warningColorActive};
+      background-color: ${props => props.theme.status.warningColorActive};
     }
   `,
-  error: ({ theme }) => `
-  background-color: ${theme.errorColor};
-  color: ${theme.textColorInverted};
+  error: () => `
+  background-color: ${props => props.theme.status.errorColor};
+  color: ${props => props.theme.textColorInverted};
 
   &:hover {
-    background-color: ${theme.errorColorHover};
+    background-color: ${props => props.theme.status.errorColorHover};
   }
 
   &:active {
-    background-color: ${theme.errorColorActive};
+    background-color: ${props => props.theme.status.errorColorActive};
   }
   `,
-  success: ({ theme }) => `
-  background-color: ${theme.successColor};
-  color: ${theme.textColorInverted};
+  success: () => `
+  background-color: ${props => props.theme.status.successColor};
+  color: ${props => props.theme.textColorInverted};
 
   &:hover {
-    background-color: ${theme.successColorHover};
+    background-color: ${props => props.theme.status.successColorHover};
   }
 
   &:active {
-    background-color: ${theme.successColorActive};
+    background-color: ${props => props.theme.status.successColorActive};
   }
   `
 };
@@ -1109,13 +1123,11 @@ const BUTTON_MODIFIERS = {
 const Button = styled.button`
   padding: 8px 12px;
   font-size: ${typeScale.paragraph};
-  font-family: ${primaryFont};
   border-radius: 2px;
   min-width: 100px;
   cursor: pointer;
   font-family: ${props => props.theme.primaryFont};
-  transition: background-color 0.2s linear, color 0.2s linear,
-    border 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear;
 
   &:hover {
     background-color: ${props => props.theme.primaryHoverColor};
@@ -1134,23 +1146,24 @@ const Button = styled.button`
   }
 `;
 
-const PrimaryButton = styled(Button)`
+export const PrimaryButton = styled(Button)`
   background-color: ${props => props.theme.primaryColor};
-  color: ${props => props.theme.textColorOnPrimary};
   border: 2px solid transparent;
+  color: ${props => props.theme.textColorOnPrimary};
 
   &:disabled {
     background-color: ${props => props.theme.disabled};
     color: ${props => props.theme.textOnDisabled};
     cursor: not-allowed;
   }
-  ${applyStyleModifiers(BUTTON_MODIFIERS)};
+
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export const SecondaryButton = styled(Button)`
   border: 2px solid ${props => props.theme.primaryColor};
-  background: none;
   color: ${props => props.theme.primaryColor};
+  background: none;
 
   &:disabled {
     background: none;
@@ -1158,22 +1171,20 @@ export const SecondaryButton = styled(Button)`
     color: ${props => props.theme.disabled};
     cursor: not-allowed;
   }
-  ${applyStyleModifiers(BUTTON_MODIFIERS)};
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export const TertiaryButton = styled(Button)`
-  background: none;
   border: 2px solid transparent;
   color: ${props => props.theme.primaryColor};
+  background: none;
 
   &:disabled {
     color: ${props => props.theme.disabled};
     cursor: not-allowed;
   }
-  ${applyStyleModifiers(BUTTON_MODIFIERS)};
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
-
-export default PrimaryButton;
 ```
 
 Now we can dynamically style our components for the theme.
@@ -1201,14 +1212,16 @@ Now we will be able to import components from `/components` instead of `/compone
 
 First let's add our illustration. Export the illustration from Figma as an SVG.
 
-Inside of `src/` create an `assets/` folder and inside add an `illustrations/` folder. Create a new file called `SignUp.js`.
+Inside of `src/` create an `assets/` folder and inside add an `illustrations/` folder.
 
-Save your SVG in a file called `SignUp.svg`.
+Save your SVG in a file called `SignUp.svg` and add it to the `illustrations` folder.
 
 Let's also create an `index.js` file inside of the `assets` folder and export our newly added illustration.
 
 ```jsx
-export * from "./illustrations/SignUp.svg";
+export const Illustrations = {
+  SignUp
+};
 ```
 
 Let's also add a new variable to our themes `formElementBackground`.
@@ -1246,11 +1259,10 @@ const ModalWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: ${primaryFont}
   align-items: center;
   position: relative;
   border-radius: 2px;
-  background: ${neutral[100]};
+  background: ${props => props.theme.formElementBackground};
 `;
 ```
 
@@ -1268,7 +1280,7 @@ const SignUpHeader = styled.h3`
 `;
 
 const SignUpText = styled.p`
-  font-size:: ${typeScale.paragraph};
+  font-size: ${typeScale.paragraph};
   max-width: 70%;
   text-align: center;
 `;
@@ -1282,14 +1294,14 @@ Don't forget to import `PrimaryButton` so we can use it in our modal. You can us
 
 ```jsx
 import { PrimaryButton } from "./Buttons";
-import SignUp from "../assets/illustrations/SignUp.svg";
+import { Illustrations } from "../assets";
 ```
 
 ```jsx
 export const SignUpModal = () => {
   return (
     <ModalWrapper>
-      <img src={SignUp} alt="Sign up for an account!" />
+      <img src={Illustrations.SignUp} alt="Sign up for an account!" />
       <SignUpHeader>Sign Up</SignUpHeader>
       <SignUpText>
         Sign up today to get access to all of our content and features!
@@ -1316,7 +1328,7 @@ const CloseIconWrapper = styled.svg`
 `;
 
 export const CloseIcon = () => (
-  <CloseIconWrapper aria-label="Close modal">...</CloseIconWrapper>
+  <CloseIconWrapper aria-hidden="true">...</CloseIconWrapper>
 );
 ```
 
@@ -1328,10 +1340,10 @@ Now let's export `CloseIcon` from the assets `index.js`.
 export * from "./icons/CloseIcon";
 ```
 
-We can import `CloseIcon` and our `SignUp` illustration into `Modals.js` and use it in our `SignUpModal` component.
+We can import `CloseIcon` and our illustrations into `Modals.js` and use it in our `SignUpModal` component.
 
 ```jsx
-import { SignUp, CloseIcon } from "../assets";
+import { Illustrations, CloseIcon } from "../assets";
 ```
 
 Now let's create a button which will wrap the `CloseIcon`. Then we'll instantiate the icon inside of the button.
@@ -1356,7 +1368,7 @@ export const SignUpModal = () => {
   return (
   <ModalWrapper>
     ...
-    <CloseModalButton onClick={() => console.log("You closed the modal!)}>
+    <CloseModalButton aria-label="Close modal" onClick={() => console.log("You closed the modal!")}>
       <CloseIcon />
     </CloseModalButton>
   </ModalWrapper>
@@ -1392,7 +1404,6 @@ Next inside `Modals.js` I imported both text fields, secondary button and the si
 import { CloseIcon } from "../assets";
 import { PrimaryButton, SecondaryButton } from "./Buttons";
 import { EmailInput, PasswordInput } from "./TextFields";
-import SignIn from "../assets/illustrations/SignIn.svg";
 ```
 
 I refactored `SignUpHeader` to be `ModalHeader` so it's more extensible, and updated the respective JSX tags.
@@ -1407,17 +1418,18 @@ const ModalHeader = styled.h3`
 <ModalHeader>Sign Up</ModalHeader>
 ```
 
-Next I created the `SignInModal` component.
+Next I created the `SignInModal` component. I need a two-column layout so I created a new `ModalWrapper`.
+
+```jsx
+const ColumnModalWrapper = styled(ModalWrapper)`
+  flex-direction: row;
+  justify-content: space-around;
+`;
+```
 
 ```jsx
 export const SignInModal = () => (
-  <ModalWrapper
-    style={{
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-around"
-    }}
-  >
+  <ColumnModalWrapper>
     <div>
       <ModalHeader>Sign In</ModalHeader>
       <EmailInput label="Email" placeholder="emmabostian@gmail.com" />
@@ -1431,8 +1443,14 @@ export const SignInModal = () => (
     <CloseModalButton onClick={() => console.log("You closed the modal!")}>
       <CloseIcon />
     </CloseModalButton>
-  </ModalWrapper>
+  </ColumnModalWrapper>
 );
 ```
 
+You can import this to `index.js` and test it out!
+
 ![Sign in](images/sign-in.png)
+
+---
+
+If you're lost or missed some code, you can check out the branch `step-1-styled-components` on the [GitHub repo](https://github.com/emmabostian/fem-design-systems)!
