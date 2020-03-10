@@ -343,7 +343,12 @@ const [showModal, setShowModal] = useState(false);
 
 ...
 
-<PrimaryButton style={{ margin: "0 16px" }} onClick={() => setShowModal(!showModal)}>Show modal</PrimaryButton>
+<button
+  style={{ margin: "0 16px 24px", padding: "8px", background: "none" }}
+  onClick={() => setShowModal(true)}
+>
+  Show modal
+</button>
 ```
 
 Lastly, let's pass `showModal` and `setShowModal` as properties to our `SignUpModal` component.
@@ -443,13 +448,7 @@ Now I just followed the same process for my second `SignIn` modal.
 ```jsx
 export const SignInModal = ({ showModal, setShowModal }) => (
   <animated.div style={useSpring(getAnimation(showModal))}>
-    <ModalWrapper
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around"
-      }}
-    >
+    <ColumnModalWrapper>
       <div>
         <ModalHeader>Sign In</ModalHeader>
         <EmailInput label="Email" placeholder="emmabostian@gmail.com" />
@@ -463,7 +462,11 @@ export const SignInModal = ({ showModal, setShowModal }) => (
       <CloseModalButton onClick={() => setShowModal(false)}>
         <CloseIcon />
       </CloseModalButton>
-    </ModalWrapper>
+    </ColumnModalWrapper>
   </animated.div>
 );
 ```
+
+---
+
+If you're lost or missed some code, you can check out the branch `step-2-animating-components` on the [GitHub repo](https://github.com/emmabostian/fem-design-systems)!
