@@ -31,7 +31,7 @@ const IndexPage = () => (
     render={props => (
       <div className="index-wrapper">
         <div className="index">
-          <h2>What we'll cover</h2>
+          <h2>What we&apos;ll cover</h2>
           <nav className="nav">
             <ul>
               {props.allMarkdownRemark.edges.map(lesson => (
