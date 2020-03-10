@@ -37,6 +37,7 @@ h2:first-child {
 .lesson-content {
   display: flex;
   flex-direction: column;
+  max-width: 40%;
 }
 
 .footer-image {

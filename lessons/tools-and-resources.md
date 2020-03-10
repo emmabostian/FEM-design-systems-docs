@@ -57,16 +57,8 @@ Here's a list of websites you can go to learn more:
 - [Accessibility in JavaScript Applications by Marcy Sutton](https://frontendmasters.com/workshops/javascript-accessibility/)
 - [Web AIM, Introduction to Accessibility](https://webaim.org/intro/)
 
-## Testing
-
-### Jest
-
-### Enzyme
-
 ## Style Guide Tooling
 
-### Gatsby
-
-### Invision DSM
-
-### React Styleguidist
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Invision DSM](https://www.invisionapp.com/design-system-manager)
+- [React Styleguidist](https://react-styleguidist.js.org/)
