@@ -26,21 +26,7 @@ It will also create a `stories/` directory inside of the `src/` folder. If we ex
 
 Run `npm run storybook` to start your development server.
 
-We can delete the `0-Welcome.stories.js` file and rename the `1-Button.stories.js` file to `Button.stories.mdx`. Let's move this file into the `components/` directory so it's close to it's component. We can then delete the `stories/` folder entirely.
-
-Storybook creates the `stories/` folder initially because it isn't aware of your project architecture. But we're aware of it so let's refactor.
-
-## Creating Stories With MDX
-
-MDX is a format which lets you write JSX in your markdown files, and we can use it to create stories and documentation.
-
-Inside `main.js` change the file extension in the `stories` array to accept either `js` or `mdx`.
-
-```js
-stories: ["../src/**/*.stories.(js|mdx)"],
-```
-
-We can use MDX to document our components and create a style guide for our design system. To do that, we'll need a few additional things, known as add-ons.
+Let's delete the `src/stories` directory completely. Storybook creates the `stories/` folder initially because it isn't aware of your project architecture. But we're aware of it so let's refactor.
 
 ## Using Add-ons
 
@@ -48,31 +34,69 @@ Add-ons are neat packages you can install and use with Storybook to gain additio
 
 Let's add a documentation add-on which will allow us to create beautiful design system documentation.
 
-Run the following command to install the docs add-on.
+Run the following command to install a few add-ons.
 
 ```
-npm i -D @storybook/addon-docs
+npm i -D @storybook/preset-create-react-app actions @storybook/addon-docs
 ```
 
 We then need to tell Storybook that we'll be using this add-on and we can do that in `main.js`.
+
+We'll be creating our documentation and stories using MDX. MDX is a format which lets you write JSX in your markdown files, and we can use it to create stories and documentation.
+
+We can use MDX to document our components and create a style guide for our design system. To do that, we'll need a few additional things, known as add-ons.
 
 Add the following to the `addons` array in `main.js`.
 
 ```js
 module.exports = {
   stories: ["../src/**/*.stories.(js|mdx)"],
-  addons: [
-    ...{
-      name: "@storybook/addon-docs",
-      options: {
-        configureJSX: true
-      }
-    }
-  ]
+  addons: ["@storybook/preset-create-react-app", "@storybook/addon-docs"]
 };
 ```
 
-The configureJSX option is useful when you're writing your docs in MDX and your project's babel config isn't already set up to handle JSX files. Now we can use our documentation add-on.
+Now we can document and create stories for our button components.
+
+```md
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { PrimaryButton, SecondaryButton, TertiaryButton } from "./Buttons";
+
+<Meta title="Design System|Buttons" component={PrimaryButton} />
+
+# Buttons
+
+Buttons are used to trigger actions within an application.
+
+## Usage
+
+Buttons are used to trigger internal actions within your web applications.
+
+## Primary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Preview withToolbar>
+  <Story name="primary">
+    <PrimaryButton>Hello world</PrimaryButton>
+  </Story>
+</Preview>
+
+## Secondary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="secondary">
+  <SecondaryButton>Hello world</SecondaryButton>
+</Story>
+
+## Tertiary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="tertiary">
+  <TertiaryButton>Hello world</TertiaryButton>
+</Story>
+```
 
 ## Passing Themes
 
@@ -93,6 +117,7 @@ module.exports = {
   stories: ["../src/**/*.stories.(js|mdx)"],
   addons: [
     "@storybook/preset-create-react-app",
+    "@storybook/addon-docs",
     "@storybook/addon-contexts/register",
     "@storybook/addon-backgrounds/register"
   ]
@@ -140,58 +165,6 @@ addParameters({
 });
 
 addDecorator(withContexts(contexts));
-```
-
-Now your themes should be working!
-
-## Writing The Button Stories
-
-We're finally ready to add some button documentation. Inside `Buttons.stories.mdx`, add the following:
-
-```jsx
-import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import {
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-  Button
-} from "./Buttons";
-
-<Meta title="Design System|Buttons" component={PrimaryButton} />
-
-# Buttons
-
-Buttons are used to trigger actions within an application.
-
-## Usage
-
-Buttons are used to trigger internal actions within your web applications.
-
-## Primary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
-
-<Preview withToolbar>
-  <Story name="primary">
-    <PrimaryButton>Hello world</PrimaryButton>
-  </Story>
-</Preview>
-
-## Secondary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
-
-<Story name="secondary">
-  <SecondaryButton>Hello world</SecondaryButton>
-</Story>
-
-## Teriary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
-
-<Story name="tertiary">
-  <TertiaryButton>Hello world</TertiaryButton>
-</Story>
 ```
 
 Now if we restart our Storybook server, we should see our buttons rendering in the UI. We also have a Docs tab which houses all of our documentation.
@@ -258,11 +231,10 @@ module.exports = {
 };
 ```
 
-We also need to tell Storybook to use `withKnobs` as a decorator. Inside `config.js`, import `withKnobs` and add it as a decorator.
+We also need to tell Storybook to use `withKnobs` as a decorator. Inside `preview.js`, import `withKnobs` and add it as a decorator.
 
 ```js
 import { withKnobs } from "@storybook/addon-knobs";
-
 ...
 
 addDecorator(withKnobs);
@@ -286,9 +258,7 @@ Then we can add the `disabled` attribute to our button using the `boolean` value
 </Preview>
 ```
 
-If you head back to your UI, under the canvas tab, you should see a knob at the bottom with a checkbox discerning the disabled state. If you click it, it should disable the button.
-
-Let's add this to the secondary and tertiary buttons.
+After restarting your storybook server, head back to your UI, under the canvas tab, you should see a knob at the bottom with a checkbox discerning the disabled state. If you click it, it should disable the button.
 
 ## Accessibility
 
@@ -311,7 +281,7 @@ module.exports = {
 };
 ```
 
-Just like the knobs add-on, we have to add `withA11y` as a decorator. Back in `config.js` let's import `withA11y` and use `addDecorator` to add it.
+Just like the knobs add-on, we have to add `withA11y` as a decorator. Back in `preview.js` let's import `withA11y` and use `addDecorator` to add it.
 
 ```js
 ...
@@ -384,6 +354,8 @@ addons.setConfig({
 
 Or you can create your own theme by creating a new JavaScript file, adding the following customizable properties, and importing and using your template inside of `manager.js`.
 
+Create a new file `myTheme.js` and add the following.
+
 ```jsx
 import { create } from "@storybook/theming/create";
 
@@ -424,14 +396,13 @@ export default create({
 });
 ```
 
-```
+```js
 import { addons } from "@storybook/addons";
 import myTheme from "./myTheme";
 
 addons.setConfig({
   theme: myTheme
 });
-
 ```
 
 ## Deploying Storybook
@@ -460,3 +431,7 @@ Once the deploy has started, you can then head over to the site settings and cha
 
 - [Storybook](https://storybook.js.org/)
 - [Setting up Storybook with Material UI and Styled Components](https://medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866)
+
+---
+
+If you're lost or missed some code, you can check out the branch `step-3-documenting-components` on the [GitHub repo](https://github.com/emmabostian/fem-design-systems)!
