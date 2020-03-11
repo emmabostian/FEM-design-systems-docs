@@ -2,7 +2,7 @@
 path: "/css-pre-processors"
 title: "CSS pre-processors"
 section: "Developing styled components"
-order: 37
+order: 32
 ---
 
 Next came CSS pre-processors like [Sass](https://sass-lang.com/) and [Less](http://lesscss.org/). These pre-processors provided styling capabilities such as nesting, mixins, and more which allow more control over how our CSS styles are applied.

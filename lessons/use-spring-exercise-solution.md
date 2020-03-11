@@ -2,7 +2,7 @@
 path: "/use-spring-exercise-solution"
 title: "Use spring exercise solution"
 section: "Animating components"
-order: 58
+order: 52
 ---
 
 ```jsx

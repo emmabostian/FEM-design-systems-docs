@@ -2,7 +2,7 @@
 path: "/adding-utilities"
 title: "Adding utilities"
 section: "Developing styled components"
-order: 43
+order: 38
 ---
 
 So this looks great! But it isn't extensible. Now let's build a set of utilities to help us build our components.

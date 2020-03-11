@@ -2,7 +2,7 @@
 path: "/how-we-apply-css"
 title: "How we apply CSS"
 section: "Developing styled components"
-order: 33
+order: 28
 ---
 
 If you've never worked with CSS-in-JS before, the paradigm shift can be a bit overwhelming.

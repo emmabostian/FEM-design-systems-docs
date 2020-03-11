@@ -2,7 +2,7 @@
 path: "/use-spring-exercise"
 title: "Use spring exercise"
 section: "Animating components"
-order: 57
+order: 51
 ---
 
 `react-spring` is a hooks-based and a physics-based animation library, and allows you to create complex animations to delight your users.

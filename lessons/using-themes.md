@@ -2,7 +2,7 @@
 path: "/using-themes"
 title: "Using themes"
 section: "Documenting components with Storybook"
-order: 65
+order: 59
 ---
 
 At the moment, Storybook is unaware of our theme, so our components aren't rendering with the correct styling.

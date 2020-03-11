@@ -2,7 +2,7 @@
 path: "/designing-a-modal"
 title: "Designing a modal"
 section: "Designing components with Figma"
-order: 32
+order: 27
 ---
 
 Now we'll create a composite component, which is a component comprised of other components.

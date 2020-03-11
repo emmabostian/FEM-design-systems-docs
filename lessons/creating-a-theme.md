@@ -2,7 +2,7 @@
 path: "/creating-a-theme"
 title: "Creating a theme"
 section: "Developing styled components"
-order: 44
+order: 39
 ---
 
 Inside `themes.js` create a default theme and let's add the following values.

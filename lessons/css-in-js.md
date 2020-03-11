@@ -2,7 +2,7 @@
 path: "/css-in-js"
 title: "CSS in JS"
 section: "Developing styled components"
-order: 38
+order: 33
 ---
 
 CSS-in-JS is a styling technique where JavaScript is used to style our components. When the components are parsed, CSS is generated and attached to the DOM.

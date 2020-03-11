@@ -2,7 +2,7 @@
 path: "/button-activity-solution"
 title: "Button activity solution"
 section: "Developing styled components"
-order: 42
+order: 37
 ---
 
 ```jsx

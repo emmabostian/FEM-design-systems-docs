@@ -2,7 +2,7 @@
 path: "/color"
 title: "Color"
 section: "Foundations of design"
-order: 16
+order: 12
 ---
 
 Before we can code our component library we have to design some of the foundational elements of our design system.

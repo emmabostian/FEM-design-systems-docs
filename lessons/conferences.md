@@ -2,7 +2,7 @@
 path: "/conferences"
 title: "Conferences"
 section: "Tools and resources"
-order: 72
+order: 68
 ---
 
 - [Clarity Conf](https://twitter.com/VMwareClarity)

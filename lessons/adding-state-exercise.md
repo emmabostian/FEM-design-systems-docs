@@ -2,7 +2,7 @@
 path: "/adding-state-exercise"
 title: "Adding state exercise"
 section: "Developing styled components"
-order: 46
+order: 41
 ---
 
 Now let's implement our button states: hover, focused, active, and disabled.

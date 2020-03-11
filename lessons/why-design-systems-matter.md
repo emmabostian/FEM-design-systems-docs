@@ -2,7 +2,7 @@
 path: "/why-design-systems-matter"
 title: "Why design systems matter"
 section: "Foundations of design systems"
-order: 4
+order: 3
 ---
 
 Design systems allow companies to define their own brand identity and bake it into accessible, consistent, and re-usable components, and this comes with many benefits.

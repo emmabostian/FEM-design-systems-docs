@@ -2,7 +2,7 @@
 path: "/deploying-storybook"
 title: "Deploying Storybook"
 section: "Documenting components with Storybook"
-order: 70
+order: 66
 ---
 
 You can run `npm run build-storybook` to build your storybook documentation and then you can deploy it for all team members to use.

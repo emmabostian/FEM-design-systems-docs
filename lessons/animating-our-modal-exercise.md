@@ -2,7 +2,7 @@
 path: "/animating-our-modal-exercise"
 title: "Animating our modal exercise"
 section: "Animating components"
-order: 61
+order: 55
 ---
 
 First install `react-spring`

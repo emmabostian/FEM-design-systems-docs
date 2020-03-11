@@ -2,7 +2,7 @@
 path: "/modal-exercise"
 title: "Modal exercise"
 section: "Developing styled components"
-order: 52
+order: 47
 ---
 
 Now we're ready to create our first composite component! Create a new file `Modal.js` inside of the `components/` folder.

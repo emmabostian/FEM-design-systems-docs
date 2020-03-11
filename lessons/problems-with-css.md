@@ -2,7 +2,7 @@
 path: "/problems-with-css"
 title: "Problems with CSS"
 section: "Developing styled components"
-order: 35
+order: 30
 ---
 
 So... why is pure CSS problematic?

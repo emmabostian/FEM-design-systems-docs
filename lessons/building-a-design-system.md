@@ -2,7 +2,7 @@
 path: "/building-a-design-system"
 title: "Building a design system"
 section: "Foundations of design systems"
-order: 13
+order: 9
 ---
 
 Before you build anything tangible you should start by defining your design principles.

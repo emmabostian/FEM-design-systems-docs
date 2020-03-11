@@ -2,7 +2,7 @@
 path: "/color-types"
 title: "Color types"
 section: "Foundations of design"
-order: 17
+order: 13
 ---
 
 ![Primary secondary and tertiary](color-terminology.svg)

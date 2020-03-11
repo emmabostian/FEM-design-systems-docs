@@ -2,7 +2,7 @@
 path: "/animating-our-modal-exercise-solution"
 title: "Animating our modal exercise solution"
 section: "Animating components"
-order: 62
+order: 56
 ---
 
 First I extracted out the `useSpring` config to a function which will return our modal animation object.

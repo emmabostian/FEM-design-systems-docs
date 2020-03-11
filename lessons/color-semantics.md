@@ -2,7 +2,7 @@
 path: "/color-semantics"
 title: "Color semantics"
 section: "Foundations of design"
-order: 21
+order: 16
 ---
 
 The colors we choose for our color palettes can have implications on the semantics of our applications.

@@ -2,7 +2,7 @@
 path: "/button-styles"
 title: "Button styles"
 section: "Designing components with Figma"
-order: 30
+order: 25
 ---
 
 There are many styles you can use to convey your button hierarchy. Your buttons should look and function like a button. Here are some common button patterns which are familiar to most users.

@@ -2,7 +2,7 @@
 path: "/design-system-checklist"
 title: "Design system checklist"
 section: "Foundations of design systems"
-order: 14
+order: 10
 ---
 
 Before a component is considered complete, it must meet several design and development requirements:

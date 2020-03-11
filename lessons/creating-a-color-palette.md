@@ -2,7 +2,7 @@
 path: "/creating-a-color-palette"
 title: "Creating a color palette"
 section: "Foundations of design"
-order: 23
+order: 18
 ---
 
 Head over to Figma and create a new project.

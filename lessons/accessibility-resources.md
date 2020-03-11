@@ -2,7 +2,7 @@
 path: "/accessibility-resources"
 title: "Accessibility resources"
 section: "Tools and resources"
-order: 74
+order: 70
 ---
 
 Making the components you build accessible is an important topic. A component being accessible means that it's usable by as many people as possible regardless of disability.

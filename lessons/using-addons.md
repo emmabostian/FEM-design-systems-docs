@@ -2,7 +2,7 @@
 path: "/using-addons"
 title: "Using addons"
 section: "Documenting components with Storybook"
-order: 64
+order: 58
 ---
 
 Add-ons are neat packages you can install and use with Storybook to gain additional functionality.

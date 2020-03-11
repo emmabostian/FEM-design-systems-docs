@@ -2,7 +2,7 @@
 path: "/documenting-components-with-storybook"
 title: "Documenting components with Storybook"
 section: "Documenting components with Storybook"
-order: 63
+order: 57
 ---
 
 Storybook allows you to document components in isolation. While there are many uses and benefits above and beyond simply documenting your components, this is how we'll be using it today.

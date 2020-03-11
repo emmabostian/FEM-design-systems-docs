@@ -2,7 +2,7 @@
 path: "/micro-interactions"
 title: "Micro-interactions"
 section: "Animating components"
-order: 54
+order: 49
 ---
 
 Animations not only take your application from good to exceptional, they’re often expected by users.

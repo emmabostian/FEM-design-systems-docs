@@ -2,7 +2,7 @@
 path: "/people"
 title: "People"
 section: "Tools and resources"
-order: 71
+order: 67
 ---
 
 - [Jina Anne](https://twitter.com/jina)

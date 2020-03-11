@@ -2,7 +2,7 @@
 path: "/style-guide-tools"
 title: "Style guide tools"
 section: "Tools and resources"
-order: 75
+order: 71
 ---
 
 - [Gatsby](https://www.gatsbyjs.org/)

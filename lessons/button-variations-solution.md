@@ -2,7 +2,7 @@
 path: "/button-variations-solution"
 title: "Button variations solution"
 section: "Developing styled components"
-order: 49
+order: 44
 ---
 
 First I added some new variables to my theme.

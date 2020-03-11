@@ -5,8 +5,6 @@ section: "Introduction"
 order: 0
 ---
 
-## Welcome!
-
 Design systems have been a passion of mine for the last couple of years so I'm thrilled to teach you this course.
 
 You will learn many skills, some of which may be new and some of which you may have prior experience with. I will cover the pieces of each technology you need to know to complete this course, but this course will not be an in-depth tutorial for any one technology.

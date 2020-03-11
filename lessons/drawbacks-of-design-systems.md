@@ -2,10 +2,8 @@
 path: "/drawbacks-of-design-systems"
 title: "Drawbacks of design systems"
 section: "Foundations of design systems"
-order: 5
+order: 4
 ---
-
-## Drawbacks Of Design Systems
 
 But while all of these benefits sound great, there are some drawbacks as well.
 

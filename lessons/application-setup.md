@@ -2,7 +2,7 @@
 path: "/application-setup"
 title: "Application setup"
 section: "Developing styled components"
-order: 39
+order: 34
 ---
 
 We're going to build our components using [create-react-app](https://github.com/facebook/create-react-app).

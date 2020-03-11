@@ -2,7 +2,7 @@
 path: "/font-types"
 title: "Font types"
 section: "Foundations of design"
-order: 25
+order: 20
 ---
 
 There are several different types of fonts and each has distinguishing characteristics.

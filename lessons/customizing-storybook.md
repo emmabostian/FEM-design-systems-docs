@@ -2,7 +2,7 @@
 path: "/customizing-storybook"
 title: "Customizing Storybook"
 section: "Documenting components with Storybook"
-order: 69
+order: 65
 ---
 
 You can customize the look and feel of your Storybook environment if you plan to publish it for your company to use.

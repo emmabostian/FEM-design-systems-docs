@@ -2,7 +2,7 @@
 path: "/common-mistakes"
 title: "Common mistakes"
 section: "Foundations of design systems"
-order: 15
+order: 11
 ---
 
 There are some common pitfalls you might run into when creating a design system.

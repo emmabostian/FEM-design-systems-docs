@@ -2,7 +2,7 @@
 path: "/tips-for-creating-micro-interactions"
 title: "Tips for creating micro-interactions"
 section: "Animating components"
-order: 55
+order: 50
 ---
 
 Before you build your first micro-interaction, here are a few tips

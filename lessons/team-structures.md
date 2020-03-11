@@ -2,7 +2,7 @@
 path: "/team-structure"
 title: "Team structure"
 section: "Foundations of design systems"
-order: 6
+order: 5
 ---
 
 There are three different team-structures with which you can build a design system and hopefully promote adoption.

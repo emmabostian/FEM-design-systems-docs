@@ -2,7 +2,7 @@
 path: "/css-specificity"
 title: "CSS specificity"
 section: "Developing styled components"
-order: 34
+order: 29
 ---
 
 There are three buckets of CSS specificity:

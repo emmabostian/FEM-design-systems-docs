@@ -2,7 +2,7 @@
 path: "/color-terminology"
 title: "Color terminology"
 section: "Foundations of design"
-order: 20
+order: 15
 ---
 
 ![HSL](images/hue-saturation-light.svg)

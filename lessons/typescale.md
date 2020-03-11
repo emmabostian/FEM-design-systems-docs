@@ -2,7 +2,7 @@
 path: "/typescale"
 title: "Typescale"
 section: "Foundations of design"
-order: 27
+order: 22
 ---
 
 There are several scales to choose from when building an application. Here are some of the most popular.

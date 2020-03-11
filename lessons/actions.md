@@ -2,7 +2,7 @@
 path: "/actions"
 title: "Actions"
 section: "Documenting components with Storybook"
-order: 66
+order: 60
 ---
 
 We can use the `addon-actions` add-on to trigger actions on our form components, like our buttons.

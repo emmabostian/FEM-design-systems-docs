@@ -2,7 +2,7 @@
 path: "/color-values"
 title: "Color values"
 section: "Foundations of design"
-order: 22
+order: 17
 ---
 
 There are several color values which we can use in our color palettes.

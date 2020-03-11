@@ -2,7 +2,7 @@
 path: "/making-extensible-themes"
 title: "Making extensible themes"
 section: "Developing styled components"
-order: 50
+order: 45
 ---
 
 Currently we're referencing the `defaultTheme` directly inside of our components, but what if we want a dynamic theme which can be changed?

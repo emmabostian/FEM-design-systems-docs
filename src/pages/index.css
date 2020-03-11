@@ -114,9 +114,3 @@ pre {
 .token.function {
   color: #aab8ff !important;
 }
-
-@media (max-width: 1500px) {
-  .lesson-links {
-    display: none;
-  }
-}

@@ -2,7 +2,7 @@
 path: "/who-are-design-systems-for"
 title: "Who are design systems for?"
 section: "Foundations of design systems"
-order: 7
+order: 6
 ---
 
 Open-source design systems aren't necessarily meant for public consumption.

@@ -2,7 +2,7 @@
 path: "/adding-state-solution"
 title: "Adding state solution"
 section: "Developing styled components"
-order: 47
+order: 42
 ---
 
 First add the disabled states to the theme.

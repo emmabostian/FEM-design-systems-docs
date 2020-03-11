@@ -2,7 +2,7 @@
 path: "/adding-global-styles"
 title: "Adding global styles"
 section: "Developing styled components"
-order: 45
+order: 40
 ---
 
 There is a way to add global styles to our styled components, which we'll want to do for things such as defining our root font size.

@@ -2,7 +2,7 @@
 path: "/button-variations-exercise"
 title: "Button variations exercise"
 section: "Developing styled components"
-order: 48
+order: 43
 ---
 
 Now that we have our default buttons, let's add our variations: large, small, icon, labelled icon, warning, success, and error.

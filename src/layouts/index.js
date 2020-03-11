@@ -29,13 +29,6 @@ const TemplateWrapper = props => {
             <Link to="/" className="navbar-brand">
               {data.site.siteMetadata.title}
             </Link>
-            <button
-              className="menu-button"
-              onClick={() => setShowMenu(true)}
-              aria-label="Menu"
-            >
-              <img src={hamburger} alt="" aria-hidden="true" />
-            </button>
           </header>
           <main className="main">{props.children}</main>
           <img

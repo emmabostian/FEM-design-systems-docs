@@ -2,7 +2,7 @@
 path: "/color-palettes"
 title: "Color palettes"
 section: "Foundations of design"
-order: 19
+order: 14
 ---
 
 There are several types of color combinations which can be used to build color palettes.

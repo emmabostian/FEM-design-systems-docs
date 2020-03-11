@@ -1,8 +1,8 @@
 ---
 path: "/wrap-up"
-title: "Wrapping up"
+title: "Wrap up"
 section: "Conclusion"
-order: 76
+order: 72
 ---
 
 I hope you enjoyed this course! I had so much fun creating it!

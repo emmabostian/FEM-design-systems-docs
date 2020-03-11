@@ -2,7 +2,7 @@
 path: "/integrating-styled-components"
 title: "Integrating styled components"
 section: "Developing styled components"
-order: 40
+order: 35
 ---
 
 Before we run our React application, let's remove some of the boilerplate.

@@ -2,7 +2,7 @@
 path: "/knobs"
 title: "Knobs"
 section: "Documenting components with Storybook"
-order: 67
+order: 61
 ---
 
 Storybook has an add-on called knobs which allows you to interact with your components and change their proprerties in real-time.

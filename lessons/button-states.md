@@ -2,7 +2,7 @@
 path: "/button-states"
 title: "Button states"
 section: "Designing components with Figma"
-order: 29
+order: 24
 ---
 
 We're finally ready to begin designing our components! First we'll build a button component in all of its variations and states. Then we'll build a composite component, a component comprised of other components, a modal!

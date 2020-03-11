@@ -2,7 +2,7 @@
 path: "/typography"
 title: "Typography"
 section: "Foundations of design"
-order: 24
+order: 19
 ---
 
 ### Terminology

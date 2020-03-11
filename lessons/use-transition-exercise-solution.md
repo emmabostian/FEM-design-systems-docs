@@ -2,7 +2,7 @@
 path: "/use-transition-exercise-solution"
 title: "Use transition exercise solution"
 section: "Animating components"
-order: 60
+order: 54
 ---
 
 ```jsx

@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { graphql } from "gatsby";
 
 export default function Template(props) {
-  let { markdownRemark, allMarkdownRemark } = props.data; // data.markdownRemark holds our post data
+  let { markdownRemark, allMarkdownRemark } = props.data;
 
   const { frontmatter, html } = markdownRemark;
   const prevLink =
@@ -11,7 +11,7 @@ export default function Template(props) {
       <Link
         className="prev"
         to={
-          allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.path
+          allMarkdownRemark.edges[frontmatter.order - 2].node.frontmatter.path
         }
       >
         Previous section
@@ -31,6 +31,7 @@ export default function Template(props) {
   return (
     <div className="lesson-container">
       <div className="lesson">
+        <h1>{frontmatter.title}</h1>
         <div
           className="lesson-content"
           dangerouslySetInnerHTML={{ __html: html }}

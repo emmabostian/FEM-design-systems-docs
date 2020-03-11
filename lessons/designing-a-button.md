@@ -2,7 +2,7 @@
 path: "/designing-a-button"
 title: "Designing a button"
 section: "Designing components with Figma"
-order: 31
+order: 26
 ---
 
 Let's design our default primary, secondary, and tertiary buttons.

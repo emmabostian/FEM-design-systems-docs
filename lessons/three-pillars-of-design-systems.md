@@ -2,7 +2,7 @@
 path: "/three-pillars-of-design-systems"
 title: "Three pillars of design systems"
 section: "Foundations of design systems"
-order: 11
+order: 8
 ---
 
 ### Design Language

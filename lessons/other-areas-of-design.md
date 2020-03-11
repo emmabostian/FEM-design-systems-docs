@@ -2,7 +2,7 @@
 path: "/other-areas-of-design"
 title: "Other areas of design"
 section: "Foundations of design"
-order: 28
+order: 23
 ---
 
 There are several other areas of design which we won't touch on today, but would be included in a fully-built design system.

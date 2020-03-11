@@ -2,7 +2,7 @@
 path: "/button-activity-exercise"
 title: "Button activity exercise"
 section: "Developing styled components"
-order: 41
+order: 36
 ---
 
 Let's create a second button called `SecondaryButton`. We want this button to inherit most of the properties from the first button, like padding, font size, etc.

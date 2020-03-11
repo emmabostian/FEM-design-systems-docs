@@ -2,7 +2,7 @@
 path: "/what-is-a-design-system"
 title: "What is a design system?"
 section: "Foundations of design systems"
-order: 3
+order: 2
 ---
 
 The internet was not originally intended to host large-scale social and enterprise applications; it was built as a method for sharing data all across the world.

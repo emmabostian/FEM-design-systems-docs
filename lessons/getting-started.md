@@ -5,8 +5,6 @@ section: "Introduction"
 order: 1
 ---
 
-## Getting Started
-
 You should create an account on [Figma](https://www.figma.com/). This is where we'll be designing our color palette, typography, and components.
 
 You should also create an account on [Netlify](https://www.netlify.com/) so you can deploy your Storybook application.

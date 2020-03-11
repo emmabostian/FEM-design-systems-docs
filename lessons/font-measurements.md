@@ -2,7 +2,7 @@
 path: "/font-measurements"
 title: "Font measurements"
 section: "Foundations of design"
-order: 26
+order: 21
 ---
 
 There are several types of measurements you can use to build a type scale.
