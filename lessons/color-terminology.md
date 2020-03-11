@@ -39,7 +39,7 @@ A shade is created by incorporating black to a base hue, which darkens the color
 
 A tint is created by adding white to a base hue, which lightens the color.
 
-![Tint](images/ting.svg)
+![Tint](images/tint.svg)
 
 [View the source](http://bit.ly/2TE2aag)
 

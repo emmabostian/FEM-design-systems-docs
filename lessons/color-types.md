@@ -5,7 +5,7 @@ section: "Foundations of design"
 order: 13
 ---
 
-![Primary secondary and tertiary](color-terminology.svg)
+![Primary secondary and tertiary](images/color-terminology.svg)
 
 #### Primary Colors
 
