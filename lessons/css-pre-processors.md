@@ -1,7 +1,7 @@
 ---
 path: "/css-pre-processors"
 title: "CSS pre-processors"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 37
 ---
 

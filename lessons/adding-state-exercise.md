@@ -1,7 +1,7 @@
 ---
 path: "/adding-state-exercise"
 title: "Adding state exercise"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 46
 ---
 

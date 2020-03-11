@@ -1,7 +1,7 @@
 ---
 path: "/button-variations-exercise"
 title: "Button variations exercise"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 48
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: "/button-variations-solution"
 title: "Button variations solution"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 49
 ---
 

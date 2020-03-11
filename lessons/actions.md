@@ -1,7 +1,7 @@
 ---
 path: "/actions"
 title: "Actions"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 66
 ---
 

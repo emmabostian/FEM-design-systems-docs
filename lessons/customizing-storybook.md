@@ -1,7 +1,7 @@
 ---
 path: "/customizing-storybook"
 title: "Customizing Storybook"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 69
 ---
 

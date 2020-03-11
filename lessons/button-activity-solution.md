@@ -1,7 +1,7 @@
 ---
 path: "/button-activity-solution"
 title: "Button activity solution"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 42
 ---
 

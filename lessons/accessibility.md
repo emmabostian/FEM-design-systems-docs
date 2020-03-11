@@ -1,7 +1,7 @@
 ---
 path: "/accessibility"
 title: "Accessibility"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 68
 ---
 

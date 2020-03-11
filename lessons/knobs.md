@@ -1,7 +1,7 @@
 ---
 path: "/knobs"
 title: "Knobs"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 67
 ---
 

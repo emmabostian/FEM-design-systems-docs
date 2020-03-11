@@ -1,7 +1,7 @@
 ---
 path: "/css-in-js"
 title: "CSS in JS"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 38
 ---
 

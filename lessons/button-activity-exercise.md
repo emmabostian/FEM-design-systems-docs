@@ -1,7 +1,7 @@
 ---
 path: "/button-activity-exercise"
 title: "Button activity exercise"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 41
 ---
 

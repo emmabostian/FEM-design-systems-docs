@@ -1,7 +1,7 @@
 ---
 path: "/using-themes"
 title: "Using themes"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 65
 ---
 

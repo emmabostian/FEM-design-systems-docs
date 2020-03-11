@@ -1,7 +1,7 @@
 ---
 path: "/adding-utilities"
 title: "Adding utilities"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 43
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: "/making-extensible-themes"
 title: "Making extensible themes"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 50
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: "/using-addons"
 title: "Using addons"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 64
 ---
 

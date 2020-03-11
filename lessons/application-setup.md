@@ -1,7 +1,7 @@
 ---
 path: "/application-setup"
 title: "Application setup"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 39
 ---
 

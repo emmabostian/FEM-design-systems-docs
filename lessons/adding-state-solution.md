@@ -1,7 +1,7 @@
 ---
 path: "/adding-state-solution"
 title: "Adding state solution"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 47
 ---
 

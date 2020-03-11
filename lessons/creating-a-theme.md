@@ -1,7 +1,7 @@
 ---
 path: "/creating-a-theme"
 title: "Creating a theme"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 44
 ---
 

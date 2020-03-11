@@ -1,7 +1,7 @@
 ---
 path: "/modal-documentation-exercise"
 title: "Modal documentation exercise"
-section: "Documenting components components"
+section: "Documenting components with Storybook"
 order: 67
 ---
 

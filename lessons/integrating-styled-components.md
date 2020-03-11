@@ -1,7 +1,7 @@
 ---
 path: "/integrating-styled-components"
 title: "Integrating styled components"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 40
 ---
 

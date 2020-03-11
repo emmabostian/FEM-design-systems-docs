@@ -1,7 +1,7 @@
 ---
 path: "/adding-global-styles"
 title: "Adding global styles"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 45
 ---
 

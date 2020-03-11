@@ -1,7 +1,7 @@
 ---
 path: "/modal-exercise-solution"
 title: "Modal exercise solution"
-section: "Developing syled components"
+section: "Developing styled components"
 order: 53
 ---
 
