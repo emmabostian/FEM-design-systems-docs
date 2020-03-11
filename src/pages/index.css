@@ -12,6 +12,9 @@ a {
   display: flex;
   padding: 24px 44px;
   justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
 }
 
 .header a {
@@ -113,4 +116,11 @@ pre {
 
 .token.function {
   color: #aab8ff !important;
+}
+
+.home-logo {
+  position: fixed;
+  right: 0;
+  top: 90px;
+  height: 91vh;
 }

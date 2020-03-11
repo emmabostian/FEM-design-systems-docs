@@ -10,7 +10,6 @@
 
 body,
 html {
-  padding: 0 0 24px;
   margin: 0;
   font-family: "Muli";
   overflow-x: hidden;
@@ -21,6 +20,8 @@ main {
   font-size: 18px;
   position: relative;
   left: 100px;
+  top: 120px;
+  min-height: calc(100vh - 440px);
 }
 
 main p {
@@ -41,6 +42,8 @@ h2:first-child {
 }
 
 .footer-image {
-  position: absolute;
   width: 40%;
+  margin-top: 200px;
+  position: relative;
+  bottom: -5px;
 }

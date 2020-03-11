@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
-
+import logo from "../assets/home-logo.svg";
 import "./index.css";
 
 const IndexPage = () => (
@@ -157,106 +157,109 @@ const IndexPage = () => (
     render={props => {
       return (
         <div>
-          <h1>Table of contents</h1>
-          <h2>Introduction</h2>
-          <ul>
-            {props.introductionQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Foundations of Design Systems</h2>
-          <ul>
-            {props.designSystemsQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Foundations of Design</h2>
-          <ul>
-            {props.designQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Designing Components With Figma</h2>
-          <ul>
-            {props.designingQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Developing Styled Components</h2>
-          <ul>
-            {props.developingQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Animating Components With React Spring</h2>
-          <ul>
-            {props.animatingQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Documenting Components With Storybook</h2>
-          <ul>
-            {props.documentingQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Tools & Resources</h2>
-          <ul>
-            {props.toolsQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <h2>Conclusion</h2>
-          <ul>
-            {props.conclusionQuery.edges.map(lesson => {
-              const { title, path } = lesson.node.frontmatter;
-              return (
-                <li key={path}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
+          <div>
+            <h1>Table of contents</h1>
+            <h2>Introduction</h2>
+            <ul>
+              {props.introductionQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Foundations of Design Systems</h2>
+            <ul>
+              {props.designSystemsQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Foundations of Design</h2>
+            <ul>
+              {props.designQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Designing Components With Figma</h2>
+            <ul>
+              {props.designingQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Developing Styled Components</h2>
+            <ul>
+              {props.developingQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Animating Components With React Spring</h2>
+            <ul>
+              {props.animatingQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Documenting Components With Storybook</h2>
+            <ul>
+              {props.documentingQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Tools & Resources</h2>
+            <ul>
+              {props.toolsQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <h2>Conclusion</h2>
+            <ul>
+              {props.conclusionQuery.edges.map(lesson => {
+                const { title, path } = lesson.node.frontmatter;
+                return (
+                  <li key={path}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <img className="home-logo" src={logo} alt="" aria-hidden="true" />
         </div>
       );
     }}
