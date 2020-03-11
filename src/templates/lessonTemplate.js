@@ -11,7 +11,7 @@ export default function Template(props) {
       <Link
         className="prev"
         to={
-          allMarkdownRemark.edges[frontmatter.order - 2].node.frontmatter.path
+          allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.path
         }
       >
         Previous section
