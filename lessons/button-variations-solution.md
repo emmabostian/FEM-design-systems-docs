@@ -41,6 +41,19 @@ const BUTTON_MODIFIERS = {
     font-size: ${typeScale.header5};
     padding: 16px 24px;
   `,
+  primaryButtonWarning: () => `
+  background-color: ${defaultTheme.status.warningColor};
+    color: ${defaultTheme.textColorInverted};
+  `,
+  secondaryButtonWarning: () => `
+    background: none;
+    border: 2px solid ${defaultTheme.status.warningColor};
+    color: ${defaultTheme.status.warningColor};
+  `,
+  tertiaryButtonWarning: () => `
+    background: none;
+    color: ${defaultTheme.status.warningColor};
+  `,
   warning: () => `
     background-color: ${defaultTheme.status.warningColor};
     color: ${defaultTheme.textColorInverted};
@@ -55,6 +68,19 @@ const BUTTON_MODIFIERS = {
       background-color: ${defaultTheme.status.warningColorActive};
     }
   `,
+  primaryButtonError: () => `
+    background-color: ${defaultTheme.status.errorColor};
+    color: ${defaultTheme.textColorInverted};
+  `,
+  secondaryButtonError: () => `
+    background: none;
+    border: 2px solid ${defaultTheme.status.errorColor};
+    color: ${defaultTheme.status.errorColor};
+  `,
+  tertiaryButtonError: () => `
+    background: none;
+    color: ${defaultTheme.status.errorColor};
+  `,
   error: () => `
   background-color: ${defaultTheme.status.errorColor};
   color: ${defaultTheme.textColorInverted};
@@ -67,6 +93,19 @@ const BUTTON_MODIFIERS = {
     background-color: ${defaultTheme.status.errorColorActive};
   }
   `,
+  primaryButtonSuccess: () => `
+  background-color: ${defaultTheme.status.successColor};
+  color: ${defaultTheme.textColorInverted};
+`,
+  secondaryButtonSuccess: () => `
+  background: none;
+  border: 2px solid ${defaultTheme.status.successColor};
+  color: ${defaultTheme.status.successColor};
+`,
+  tertiaryButtonSuccess: () => `
+  background: none;
+  color: ${defaultTheme.status.successColor};
+`,
   success: () => `
   background-color: ${defaultTheme.status.successColor};
   color: ${defaultTheme.textColorInverted};
@@ -85,8 +124,15 @@ const BUTTON_MODIFIERS = {
 Now inside `index.js` we can add another modifier to our buttons.
 
 ```jsx
-<PrimaryButton modifiers={["small", "success"]}>Hello World</PrimaryButton>
-<SecondaryButton modifiers="error">Goodbye World</SecondaryButton>
+ <PrimaryButton modifiers={["small", "success", "primaryButtonSuccess"]}>
+      Hello world
+    </PrimaryButton>
+    <SecondaryButton modifiers={["large", "warning", "secondaryButtonWarning"]}>
+      Goodbye world
+    </SecondaryButton>
+    <TertiaryButton modifiers={["error", "tertiaryButtonError"]}>
+      Hey world
+    </TertiaryButton>
 ```
 
 ![Modifiers](images/modifiers.png)
