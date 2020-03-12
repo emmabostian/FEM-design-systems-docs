@@ -3,6 +3,7 @@ path: "/intro"
 title: "Introduction"
 section: "Introduction"
 order: 0
+description: Welcome to Foundations of Design Systems!
 ---
 
 Design systems have been a passion of mine for the last couple of years so I'm thrilled to teach you this course.

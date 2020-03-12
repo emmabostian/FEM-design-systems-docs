@@ -3,6 +3,7 @@ path: "/getting-started"
 title: "Getting started"
 section: "Introduction"
 order: 1
+description: In this lesson we'll check out what you need to get started.
 ---
 
 You should create an account on [Figma](https://www.figma.com/). This is where we'll be designing our color palette, typography, and components.
