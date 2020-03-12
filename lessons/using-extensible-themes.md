@@ -3,6 +3,7 @@ path: "/using-extensible-themes"
 title: "Using extensible themes"
 section: "Developing styled components"
 order: 46
+description: Now that we've created our theme, let's use it in our component library.
 ---
 
 Finally let's update our `Buttons.js` file to use our theme prop.

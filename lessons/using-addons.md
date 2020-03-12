@@ -3,6 +3,7 @@ path: "/using-addons"
 title: "Using addons"
 section: "Documenting components with Storybook"
 order: 58
+description: Add-ons allow you to add additional capabilities to your Storybook configuration. Let's add an add-on for creating documentation.
 ---
 
 Add-ons are neat packages you can install and use with Storybook to gain additional functionality.

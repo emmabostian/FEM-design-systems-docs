@@ -3,6 +3,7 @@ path: "/a-practical-example"
 title: "A practical example"
 section: "Foundations of design systems"
 order: 7
+description: In this video we'll illustrate the financial costs of not having a design system.
 ---
 
 Nathan Curtis, a very prominent speaker within design systems, has a great blog post titled ["And you thought buttons were easy."](https://medium.com/eightshapes-llc/and-you-thought-buttons-were-easy-26eb5b5c1871) I'd like to share some of his insight with you today, because I think it will really drive the point home.

@@ -3,6 +3,7 @@ path: "/making-extensible-themes"
 title: "Making extensible themes"
 section: "Developing styled components"
 order: 45
+description: In this video we'll create a dark theme which will be used in our component library.
 ---
 
 Currently we're referencing the `defaultTheme` directly inside of our components, but what if we want a dynamic theme which can be changed?

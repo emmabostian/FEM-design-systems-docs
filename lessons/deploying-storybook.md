@@ -3,6 +3,7 @@ path: "/deploying-storybook"
 title: "Deploying Storybook"
 section: "Documenting components with Storybook"
 order: 66
+description: Now that we have a style guide, let's deploy it, using Netlify, so your team can access it.
 ---
 
 You can run `npm run build-storybook` to build your storybook documentation and then you can deploy it for all team members to use.

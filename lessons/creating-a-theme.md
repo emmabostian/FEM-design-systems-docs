@@ -3,6 +3,7 @@ path: "/creating-a-theme"
 title: "Creating a theme"
 section: "Developing styled components"
 order: 39
+description: Let's take our color utilities and create a theme from it.
 ---
 
 Inside `themes.js` create a default theme and let's add the following values.

@@ -3,6 +3,7 @@ path: "/style-guide-tools"
 title: "Style guide tools"
 section: "Tools and resources"
 order: 71
+description: Here are some tools which can help you build your style guide.
 ---
 
 - [Gatsby](https://www.gatsbyjs.org/)

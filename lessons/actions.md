@@ -3,6 +3,7 @@ path: "/actions"
 title: "Actions"
 section: "Documenting components with Storybook"
 order: 60
+description: Actions allow us to simulate events on events like onClick or onMouseOver. In this video we'll add actions to our Storybook configuration.
 ---
 
 We can use the `addon-actions` add-on to trigger actions on our form components, like our buttons.

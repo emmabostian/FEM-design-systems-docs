@@ -3,6 +3,7 @@ path: "/building-a-design-system"
 title: "Building a design system"
 section: "Foundations of design systems"
 order: 9
+description: How do you build a design system? Let's find out!
 ---
 
 Before you build anything tangible you should start by defining your design principles.

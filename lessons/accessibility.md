@@ -3,6 +3,7 @@ path: "/accessibility"
 title: "Accessibility"
 section: "Documenting components with Storybook"
 order: 64
+description: Let's add an accessibility add-on to our Storybook configuration so we can test the accessibility of our components.
 ---
 
 We can use the `storybook-addon-a11y` add-on to test the accessibility of our components.

@@ -3,6 +3,7 @@ path: "/adding-utilities"
 title: "Adding utilities"
 section: "Developing styled components"
 order: 38
+description: Utilities allow us to create a toolbox which can be applied to all of our components, like typescale and color palettes.
 ---
 
 So this looks great! But it isn't extensible. Now let's build a set of utilities to help us build our components.

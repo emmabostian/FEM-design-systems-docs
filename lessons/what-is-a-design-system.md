@@ -3,6 +3,7 @@ path: "/what-is-a-design-system"
 title: "What is a design system?"
 section: "Foundations of design systems"
 order: 2
+description: In this lesson we'll learn about design systems and why our terminology for discussing websites is problematic.
 ---
 
 The internet was not originally intended to host large-scale social and enterprise applications; it was built as a method for sharing data all across the world.

@@ -3,6 +3,7 @@ path: "/animating-our-modal-exercise-solution"
 title: "Animating our modal exercise solution"
 section: "Animating components"
 order: 56
+description: In this video we'll review the solution for animating components.
 ---
 
 First I extracted out the `useSpring` config to a function which will return our modal animation object.

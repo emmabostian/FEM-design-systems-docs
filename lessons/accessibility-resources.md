@@ -3,6 +3,7 @@ path: "/accessibility-resources"
 title: "Accessibility resources"
 section: "Tools and resources"
 order: 70
+description: Accessibility is extremely important in design systems so here a a few resources for learning more.
 ---
 
 Making the components you build accessible is an important topic. A component being accessible means that it's usable by as many people as possible regardless of disability.

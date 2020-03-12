@@ -3,6 +3,7 @@ path: "/animating-our-modal-exercise"
 title: "Animating our modal exercise"
 section: "Animating components"
 order: 55
+description: Let's walk through an example of animating our modal component.
 ---
 
 First install `react-spring`

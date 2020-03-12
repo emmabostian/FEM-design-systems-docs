@@ -3,6 +3,7 @@ path: "/team-structure"
 title: "Team structure"
 section: "Foundations of design systems"
 order: 5
+description: What does a traditional design systems team look like? Let's examine the three team structures you can use to build a design system.
 ---
 
 There are three different team-structures with which you can build a design system and hopefully promote adoption.

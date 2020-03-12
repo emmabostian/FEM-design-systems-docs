@@ -3,6 +3,7 @@ path: "/people"
 title: "People"
 section: "Tools and resources"
 order: 67
+description: Here are some notable people in design systems you should check out to learn more.
 ---
 
 - [Jina Anne](https://twitter.com/jina)

@@ -3,6 +3,7 @@ path: "/adding-state-solution"
 title: "Adding state solution"
 section: "Developing styled components"
 order: 42
+description: Let's review the solution for adding styling for different states like hover, focus, and disabled.
 ---
 
 First add the disabled states to the theme.

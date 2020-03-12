@@ -3,6 +3,7 @@ path: "/adding-global-styles"
 title: "Adding global styles"
 section: "Developing styled components"
 order: 40
+description: Sometimes you need global styles within your design system. In this video we'll create a global stylesheet which can be used to apply styles across our design system.
 ---
 
 There is a way to add global styles to our styled components, which we'll want to do for things such as defining our root font size.

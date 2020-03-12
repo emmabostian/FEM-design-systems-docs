@@ -13,13 +13,13 @@ We will be coding in React, so it's recommended you have React knowledge prior t
 `
 Some of the topics and technologies we'll cover include:
 
-- [Foundations of design systems](foundations-of-design-systems.md)
-- [Foundations of design](foundations-of-design.md)
-- [Designing with Figma](designing-with-figma.md)
-- [Developing styled components](developing-styled-components.md)
-- [Animating components with react-spring](animating-components.md)
-- [Documenting components with Storybook](documenting-components-with-storybook.md)
-- [Tooling & resources](tools-and-resources.md)
+- Foundations of design systems
+- Foundations of design
+- Designing with Figma
+- Developing styled components
+- Animating components with react-spring
+- Documenting components with Storybook
+- Tooling & resources
 
 ## About Me
 

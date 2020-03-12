@@ -3,6 +3,7 @@ path: "/use-spring-exercise"
 title: "Use spring exercise"
 section: "Animating components"
 order: 51
+description: In this lesson we'll use useSpring to animate our modal transition.
 ---
 
 `react-spring` is a hooks-based and a physics-based animation library, and allows you to create complex animations to delight your users.

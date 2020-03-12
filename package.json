@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "code-mirror-themes": "^1.0.0",
+    "front-matter": "3.0.2",
     "gatsby": "^2.13.51",
     "gatsby-cli": "^2.7.27",
     "gatsby-link": "^2.2.4",

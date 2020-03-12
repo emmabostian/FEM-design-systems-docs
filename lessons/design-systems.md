@@ -3,6 +3,7 @@ path: "/design-systems"
 title: "Design systems"
 section: "Tools and resources"
 order: 69
+description: Here are some resources you can check out if you need inspiration for your design system.
 ---
 
 Here's a list of popular design systems you can check out:

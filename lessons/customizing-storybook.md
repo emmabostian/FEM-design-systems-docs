@@ -3,6 +3,7 @@ path: "/customizing-storybook"
 title: "Customizing Storybook"
 section: "Documenting components with Storybook"
 order: 65
+description: Did you know you can actually customize the appearance of Storybook? Let's find out how!
 ---
 
 You can customize the look and feel of your Storybook environment if you plan to publish it for your company to use.

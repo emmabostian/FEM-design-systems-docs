@@ -3,6 +3,7 @@ path: "/problems-with-css"
 title: "Problems with CSS"
 section: "Developing styled components"
 order: 30
+description: What are some of the common problems with CSS that make it difficult to use in design systems?
 ---
 
 So... why is pure CSS problematic?

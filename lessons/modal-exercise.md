@@ -3,6 +3,7 @@ path: "/modal-exercise"
 title: "Modal exercise"
 section: "Developing styled components"
 order: 47
+description: Now that we've built a modal together, it's your turn to build another modal component!
 ---
 
 Now we're ready to create our first composite component! Create a new file `Modal.js` inside of the `components/` folder.

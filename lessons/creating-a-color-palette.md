@@ -11,7 +11,7 @@ I've created a starter file for you to use, and you can get that [here](https://
 
 Copy and paste over the existing artboards from the starter file into the respective tabs on your new project.
 
-Now head over to [Canva Color Palettes](https://www.canva.com/colors/color-palettes/) or [Coolors](https://coolors.co/browser/latest/1) and select a monochromatic color palette to use.
+Now head over to [Coolors](https://coolors.co/browser/latest/1) and select a monochromatic color palette to use.
 
 I chose the palette:
 
@@ -50,5 +50,7 @@ We'll also create text and text-inverted colors.
 Text Color: #000000;
 Text Color Inverted: #ffffff;
 ```
+
+Once you've filled in your squares with your monochromatic palette, select the square with the color, then click the four menu dots underneath the Fill item in the right-hand sidebar, click the plus button and add the label `primary-X00`. This will allow you to use your colors within your components.
 
 Take the next 15 minutes and find a monochromatic color palette you enjoy!

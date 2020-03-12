@@ -3,6 +3,7 @@ path: "/knobs"
 title: "Knobs"
 section: "Documenting components with Storybook"
 order: 61
+description: Knobs allow you to interact with your Storybook components in real-time. In this video we'll add knobs to our Storybook configuration and learn how to toggle the disabled state of our buttons.
 ---
 
 Storybook has an add-on called knobs which allows you to interact with your components and change their proprerties in real-time.

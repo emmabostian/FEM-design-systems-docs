@@ -3,6 +3,7 @@ path: "/typescale"
 title: "Typescale"
 section: "Foundations of design"
 order: 22
+description: Typescale allows us to maintain a consistent hierarchy of content within our applications. Let's learn how to build one.
 ---
 
 There are several scales to choose from when building an application. Here are some of the most popular.

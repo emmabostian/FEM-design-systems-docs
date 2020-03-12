@@ -3,6 +3,7 @@ path: "/css-specificity"
 title: "CSS specificity"
 section: "Developing styled components"
 order: 29
+description: CSS specificity is the mathematical process of applying styling to your application. Let's review how it works.
 ---
 
 There are three buckets of CSS specificity:

@@ -3,6 +3,7 @@ path: "/using-themes"
 title: "Using themes"
 section: "Documenting components with Storybook"
 order: 59
+description: How do we use our themes within our Storybook documentation? Let's find out!
 ---
 
 At the moment, Storybook is unaware of our theme, so our components aren't rendering with the correct styling.

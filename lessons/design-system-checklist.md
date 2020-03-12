@@ -3,6 +3,7 @@ path: "/design-system-checklist"
 title: "Design system checklist"
 section: "Foundations of design systems"
 order: 10
+description: Having a design system checklist ensures your components are complete and ready for development. In this video we'll examine some aspects, such as accessibility, that you may want to include on your design checklist.
 ---
 
 Before a component is considered complete, it must meet several design and development requirements:

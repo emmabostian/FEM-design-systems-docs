@@ -3,6 +3,7 @@ path: "/use-transition-exercise"
 title: "Use transition exercise"
 section: "Animating components"
 order: 53
+description: In this video we'll learn about useTransition and how it can be used to animate your components.
 ---
 
 `useTransition` is a bit more complex and will mount and unmount your elements from the DOM. It can also transition between different elements in the DOM (like in a photo album).

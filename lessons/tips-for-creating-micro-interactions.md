@@ -3,6 +3,7 @@ path: "/tips-for-creating-micro-interactions"
 title: "Tips for creating micro-interactions"
 section: "Animating components"
 order: 50
+description: While micro-interactions have many benefits, there are a few things to keep in mind when creating them.
 ---
 
 Before you build your first micro-interaction, here are a few tips

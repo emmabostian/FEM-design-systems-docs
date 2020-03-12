@@ -3,9 +3,8 @@ path: "/typography"
 title: "Typography"
 section: "Foundations of design"
 order: 19
+description: Typography comes with many terms like ascender, kerning, and x-height. In this video we'll illustrate and define these concepts so you can pick the right font for your design system.
 ---
-
-# Terminology
 
 ## Ascender
 

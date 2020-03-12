@@ -3,6 +3,7 @@ path: "/css-naming-architectures"
 title: "CSS naming architectures"
 section: "Developing styled components"
 order: 31
+description: In this video we'll take a look at some CSS naming architectures and understand why they're important.
 ---
 
 CSS naming architectures, like SMAACS and BEM (block-element-modifier) were created to superficially scope CSS styling. However, they were... superficial. This means that they are simply a naming convention for developers to create more scoped styling, and wouldn't actually prevent leaked styling.

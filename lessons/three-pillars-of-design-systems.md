@@ -3,6 +3,7 @@ path: "/three-pillars-of-design-systems"
 title: "Three pillars of design systems"
 section: "Foundations of design systems"
 order: 8
+description: Design systems are comprised of three main pillars. In this video we'll learn about the design language, component library, and style guide.
 ---
 
 ### Design Language

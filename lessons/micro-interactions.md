@@ -3,6 +3,7 @@ path: "/micro-interactions"
 title: "Micro-interactions"
 section: "Animating components"
 order: 49
+description: Micro-interactions have many benefits on our user experience. In this video we'll learn all about micro-interactions.
 ---
 
 Animations not only take your application from good to exceptional, they’re often expected by users.

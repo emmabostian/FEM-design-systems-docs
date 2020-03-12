@@ -3,6 +3,7 @@ path: "/why-design-systems-matter"
 title: "Why design systems matter"
 section: "Foundations of design systems"
 order: 3
+description: Design systems are important, especially for large companies with many products. Let's examine some of the benefits.
 ---
 
 Design systems allow companies to define their own brand identity and bake it into accessible, consistent, and re-usable components, and this comes with many benefits.

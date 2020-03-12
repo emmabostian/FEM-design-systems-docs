@@ -3,6 +3,7 @@ path: "/modal-exercise-solution"
 title: "Modal exercise solution"
 section: "Developing styled components"
 order: 48
+description: Let's build a modal component using styled components and our utilities such as color and typography.
 ---
 
 I first downloaded my Sign In illustration as an SVG and added to the `assets/illustrations` folder. Because it's a simple SVG file we don't have to add it to the exports in `index.js`.

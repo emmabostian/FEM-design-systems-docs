@@ -3,6 +3,7 @@ path: "/other-areas-of-design"
 title: "Other areas of design"
 section: "Foundations of design"
 order: 23
+description: We haven't nearly covered all aspects of design you'll need in your design system. Here are a few more areas you'll want to explore if you're building your design language.
 ---
 
 There are several other areas of design which we won't touch on today, but would be included in a fully-built design system.

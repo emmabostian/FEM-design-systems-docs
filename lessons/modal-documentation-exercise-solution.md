@@ -3,6 +3,7 @@ path: "/modal-documentation-exercise-solution"
 title: "Modal documentation exercise solution"
 section: "Documenting components with Storybook"
 order: 63
+description: Let's review the solution for our modal Storybook exercise.
 ---
 
 ```jsx
