@@ -47,6 +47,13 @@ const Button = styled.button`
     border-color: ${defaultTheme.primaryActiveColor};
     color: ${defaultTheme.textColorOnPrimary};
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    background: none;
+    color: ${defaultTheme.disabled};
+    border: none;
+  }
 `;
 
 const PrimaryButton = styled(Button)`
@@ -57,7 +64,7 @@ const PrimaryButton = styled(Button)`
   &:disabled {
     background-color: ${defaultTheme.disabled};
     color: ${defaultTheme.textOnDisabled};
-    cursor: not-allowed;
+    border-color: ${defaultTheme.disabled};
   }
 `;
 
@@ -66,22 +73,13 @@ export const SecondaryButton = styled(Button)`
   color: ${defaultTheme.primaryColor};
 
   &:disabled {
-    background: none;
     border: 2px solid ${defaultTheme.disabled};
-    color: ${defaultTheme.disabled};
-    cursor: not-allowed;
   }
 `;
 
 export const TertiaryButton = styled(Button)`
   border: 2px solid transparent;
   color: ${defaultTheme.primaryColor};
-
-  &:disabled {
-    color: ${defaultTheme.disabled};
-    cursor: not-allowed;
-    background: none;
-  }
 `;
 
 export default PrimaryButton;
