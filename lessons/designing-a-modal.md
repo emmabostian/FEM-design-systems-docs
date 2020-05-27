@@ -41,4 +41,4 @@ The illustration should be 32px from the title. The title should be an `h3` and 
 
 Next, I want you to create one more modal which uses some of the components we've made. I've also included a "Text Fields" page in the Figma kit which you can use for your mockups.
 
-If you need inspiration I suggest [Dribbble](dribbble.com/).
+If you need inspiration I suggest [Dribbble](https://dribbble.com/).
